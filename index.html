@@ -521,7 +521,7 @@
             const timestamp = new Date();
             const duration = timestamp.getTime() - keyStartTime.getTime();
             
-            const detectedType = duration < 5 ? 'Remote' : 'Local';
+            const detectedType = duration < 15 ? 'Remote' : 'Local';
             
             document.getElementById('detectedType').textContent = detectedType;
             document.getElementById('keyDuration').textContent = duration + 'ms';
